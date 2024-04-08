@@ -9,7 +9,7 @@
       shell: docker login -u dharmendrgowda2107@gmail.com -p Gowda@2107 gowdaa.jfrog.io   
     
     - name: pull an image
-      shell: docker pull gowdaa.jfrog.io/docker-docker/dharma:v${BUILD_NUMBER}
+      shell: docker pull gowdaa.jfrog.io/docker-docker/dharma:v{{BUILD_NUMBER}}
 
    # - name: remove container
     #  shell: docker rm -f devopsAppDeploy
