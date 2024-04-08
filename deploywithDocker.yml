@@ -6,7 +6,7 @@
   tasks:
       
     - name: login to jfrog
-      shell: docker login -u ${user} -p ${pass} gowdaa.jfrog.io   
+      shell: docker login -u dharmendrgowda2107@gmail.com -p Gowda@2107 gowdaa.jfrog.io   
     
     - name: pull an image
       shell: docker pull gowdaa.jfrog.io/docker-docker/dharma:v${BUILD_NUMBER
