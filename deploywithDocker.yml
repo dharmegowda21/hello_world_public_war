@@ -11,10 +11,10 @@
     - name: pull an image
       shell: docker pull gowdaa.jfrog.io/docker-docker/dharma:v{{BUILD_NUMBER}}
 
-   # - name: remove container
-    #  shell: docker rm -f devopsAppDeploy
+    - name: remove container
+      shell: docker rm -f devopsAppDeploy
         
     - name: create a application container
-      shell: docker run -id --name devopsAppDeploy -p 8111:8080 gowdaa.jfrog.io/docker-docker/dharma:v{{ BUILD_NUMBER }}
+     shell: docker run -id --name devopsAppDeploy -p 8111:8080 gowdaa.jfrog.io/docker-docker/dharma:v{{ BUILD_NUMBER }}
  
    
